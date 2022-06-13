@@ -1,11 +1,5 @@
 一个基于pyinstaller可以打包python程序的镜像
 
-## 开发
-
-```bash
-pip install pyinstaller
-cp /usr/local/python3/bin/pyinstaller /usr/local/bin
-```
 
 ## 使用
 
