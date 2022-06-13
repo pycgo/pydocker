@@ -1,13 +1,38 @@
-一个可以打包python程序的镜像 暂时基于centos7.9
+一个基于pyinstaller可以打包python程序的镜像
 
+## 开发
 
+```bash
 pip install pyinstaller
 cp /usr/local/python3/bin/pyinstaller /usr/local/bin
+```
 
+## 使用
 
+### 使用镜像
 
-#这样编译 可以带上sys.args参数
+```bash
+docker run -it registry.aliyuncs.com/opsflow/pyinstall
+```
+
+### 需要自己先在容器内安装自己脚本的python库依赖
+
+```bash
+pip3 install xxxx
+```
+
+### 执行下面的命令完成打包
+
+```bash
+pyinstaller -F test.py
+```
+
+## 其他
+
+关于shell参数，建议使用argparse，如果使用sys.args 需要使用下面的命令
+
+```bash
 pyinstaller --onefile --windowed checkhttps.py
+```
 
-#如果试用argparse 来设置参数 直接编译即可
-pyinstaller -F kafkaAlert.py
+关于其他打包参数，请参照pyinstaller命令
