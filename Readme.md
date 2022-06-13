@@ -1,4 +1,4 @@
-一个基于pyinstaller可以打包python程序的镜像
+一个基于pyinstaller可以打包python程序的镜像(python3)
 
 
 ## 使用
