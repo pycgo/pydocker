@@ -1,4 +1,4 @@
-FROM centos:7.9.2009
+FROM centos:centos7.9.2009
 
 COPY requirements.txt /
 RUN yum install python38 which -y  && \
