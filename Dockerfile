@@ -1,4 +1,4 @@
-FROM centos:centos7.9.2009
+FROM registry.cn-hangzhou.aliyuncs.com/netflow/centos7.9
 
 COPY requirements.txt /
 RUN yum install python38 which -y  && \
