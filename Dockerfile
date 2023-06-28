@@ -1,4 +1,4 @@
-FROM centos:7.9.2009
+FROM registry.aliyuncs.com/netflow/centos7.9
 
 COPY requirements.txt /
 RUN yum install python38 python3-pip which -y  && \
